@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "Done & Dusted",
+    "slug": "hometogether",
+    "scheme": "hometogether",
+    "version": "0.3.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Done & Dusted to attach a photo to a shopping item or household task.",
+          "cameraPermission": "Allow Done & Dusted to take an optional shopping or task photo.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.hometogether.app"
+    },
+    "android": {
+      "package": "com.hometogether.app"
+    }
+  }
+}
